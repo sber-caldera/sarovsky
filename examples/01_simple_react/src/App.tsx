@@ -1,8 +1,10 @@
 import { useState as uso } from 'react'
-import { useState } from '@sber-global/sarov'
+import { init, useState } from '@sber-global/sarov'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+
+init({ useState: uso })
 
 function App() {
   const { count, setCount } = useState({count: 0})

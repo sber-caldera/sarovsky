@@ -13,7 +13,10 @@
   },
   "main": "index.js",
   "scripts": {
-    "build": "rollup --config rollup.config.ts --configPlugin typescript",
+    "build": "npm run clean && npm run build:js && npm run build:dts",
+    "build:js": "rollup --config rollup.config.ts --configPlugin typescript",
+    "build:dts": "rollup --config rollup.dts.config.ts --configPlugin typescript",
+    "clean": "rimraf packages/*/dist",
     "test": "vitest"
   },
   "repository": {
@@ -35,6 +38,7 @@
     "cross-env": "^7.0.3",
     "rimraf": "^5.0.7",
     "rollup": "^4.18.0",
+    "rollup-plugin-dts": "^6.1.1",
     "tslib": "^2.6.3",
     "tsx": "^4.15.7",
     "typescript": "^5.5.2",

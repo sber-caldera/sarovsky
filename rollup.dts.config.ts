@@ -1,24 +1,19 @@
 import typescript from '@rollup/plugin-typescript';
+import dts from 'rollup-plugin-dts';
 
 
 export default {
 	input: 'packages/sarov/src/index.ts',
 	output: [
 		{
-			file: 'packages/sarov/dist/cjs/index.js',
-			format: 'cjs',
-			sourcemap: true,
-			name: 'sarov',
-		},
-		{
-			file: 'packages/sarov/dist/esm/index.js',
+			file: 'packages/sarov/dist/types/index.d.ts',
 			format: 'esm',
-			sourcemap: true,
 		},
 	],
 	plugins: [
 		typescript({
 			tsconfig: './tsconfig.json',
 		}),
+		dts(),
 	],
 };

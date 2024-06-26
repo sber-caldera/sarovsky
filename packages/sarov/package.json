@@ -1,12 +1,12 @@
 {
   "name": "@sber-global/sarov",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A state-manager for react-compatible frameworks",
-  "type": "module",
   "engines": {
     "node": ">=18.0.0"
   },
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "types": "dist/types/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
