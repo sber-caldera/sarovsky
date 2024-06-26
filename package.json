@@ -1,0 +1,30 @@
+{
+  "name": "sarovsky",
+  "version": "1.0.0",
+  "description": "A react-based frontend framework with an integrated state-manager",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sber-caldera/sarovsky.git"
+  },
+  "author": "Caldera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sber-caldera/sarovsky/issues"
+  },
+  "homepage": "https://github.com/sber-caldera/sarovsky#readme",
+  "keywords": [
+    "frontend"
+  ]
+}
